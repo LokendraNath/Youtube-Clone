@@ -1,0 +1,121 @@
+a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.thumbanails {
+  width: 100%;
+  border-radius: 10px;
+}
+.search-bar {
+  display: block;
+}
+.video-title {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+}
+.video-author,
+.video-stats {
+  font-size: 13px;
+  color: rgb(96, 96, 96);
+}
+.video-author {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.channel-logo {
+  display: inline-block;
+  width: 50px;
+  height: 90px;
+  vertical-align: top;
+  position: relative;
+}
+.channel-tips{
+  background-color: white;
+  padding: 5px 11px;
+  box-shadow: 0px 0px 11px;
+  border-radius: 4px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: -35;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+  z-index: 100;
+}
+.mini-img{
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  margin-right: 8px;
+}
+.mini-info{
+  white-space: nowrap;
+}
+.name-mini{
+  font-weight: bold;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+.channel-mini-subs{
+  font-size: 15px;
+}
+.channel-logo:hover .channel-tips{
+  opacity: 1;
+}
+.video-info {
+  display: inline-block;
+}
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+  margin-left: 3px;
+}
+.thumb-row {
+  margin-bottom: 12px;
+  position: relative;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+@media (max-width:1259px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width:1030px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .video-title{
+    font-size: 18px;
+  }
+  .profile-picture{
+    .profile-picture{
+      width: 0px;
+    }
+  }
+}
+.time {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 10px;
+  border-radius: 3px;
+  bottom: 10px;
+}
